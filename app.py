@@ -34,4 +34,7 @@ build_histogram = st.checkbox('Construir un histograma')
 
 if build_histogram:  # si la casilla de verificación está seleccionada
     st.write('Construir un histograma para la columna odómetro')
-    ...
+    # Crear un histograma
+    fig_hist1 = px.histogram(car_data, x="odometer")
+    # Mostrar el gráfico de histograma
+    st.plotly_chart(fig_hist1, use_container_width=True)
