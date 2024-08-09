@@ -9,35 +9,26 @@ car_data = pd.read_csv('vehicles_us.csv')
 # Encabezado de la aplicación
 st.header('Análisis de Datos de Vehículos en Venta en EE.UU.')
 
-# Crear botón para construir un histograma
-hist_button = st.button('Construir histograma')
+# Crear casilla de verificación para el histograma
+build_histogram = st.checkbox('Construir un histograma')
 
-# Al hacer clic en el botón del histograma
-if hist_button:
+if build_histogram:  # Si la casilla de verificación está seleccionada
     st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
     # Crear un histograma
     fig_hist = px.histogram(car_data, x="odometer")
     # Mostrar el gráfico de histograma
     st.plotly_chart(fig_hist, use_container_width=True)
 
-# Crear botón para construir un gráfico de dispersión
-scatter_button = st.button('Construir gráfico de dispersión')
+# Crear casilla de verificación para el gráfico de dispersión
+build_scatter = st.checkbox('Construir un gráfico de dispersión')
 
-# Al hacer clic en el botón del gráfico de dispersión
-if scatter_button:
+if build_scatter:  # Si la casilla de verificación está seleccionada
     st.write('Creación de un gráfico de dispersión para el conjunto de datos de anuncios de venta de coches')
     # Crear un gráfico de dispersión
     fig_scatter = px.scatter(car_data, x="odometer", y="price")
     # Mostrar el gráfico de dispersión
     st.plotly_chart(fig_scatter, use_container_width=True)
 
-# Crear una casilla de verificación para construir un histograma adicional
-build_histogram = st.checkbox('Construir un histograma adicional')
 
-if build_histogram:  # Si la casilla de verificación está seleccionada
-    st.write('Construir un histograma adicional para la columna odómetro')
-    # Crear un histograma
-    fig_hist1 = px.histogram(car_data, x="odometer")
-    # Mostrar el gráfico de histograma
-    st.plotly_chart(fig_hist1, use_container_width=True)
+
 
