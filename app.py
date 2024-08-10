@@ -8,7 +8,6 @@ car_data = pd.read_csv('vehicles_us.csv')
 
 # Encabezado de la aplicación
 st.header('Análisis de Datos de Vehículos en Venta en EE.UU.')
-st.header('Esta es una aplicación web interactiva construida con Streamlit que permite analizar un conjunto de datos de vehículos en venta en los Estados Unidos. La aplicación ofrece herramientas para visualizar datos a través de histogramas y gráficos de dispersión.')
 
 # Crear casilla de verificación para el histograma
 build_histogram = st.checkbox('Construir un histograma')
