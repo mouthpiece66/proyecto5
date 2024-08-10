@@ -1,6 +1,13 @@
 # proyecto5
-# Análisis de Datos de Vehículos en Venta en EE.UU.
+#Análisis de Datos de Vehículos en Venta en EE.UU.
 
-# Esta aplicación web,  permite a los usuarios visualizar y analizar datos de vehículos en venta en los Estados Unidos. Proporciona dos tipos de gráficos interactivos:
+Esta es una aplicación web interactiva construida con Streamlit que permite analizar un conjunto de datos de vehículos en venta en los Estados Unidos. La aplicación ofrece herramientas para visualizar datos a través de histogramas y gráficos de dispersión.
 
-# Muestra la distribución de los odómetros de los vehículos y muestra la relación entre el odómetro y el precio de los vehículos, coloreado por el año del vehículo.
+## Funcionalidades
+
+- **Construir Histograma:** 
+  - Los usuarios pueden generar un histograma para visualizar la distribución de los valores del odómetro en el conjunto de datos.
+  
+- **Construir Gráfico de Dispersión:** 
+  - Los usuarios pueden crear un gráfico de dispersión para analizar la relación entre el kilometraje del vehículo y su precio de venta.
+
