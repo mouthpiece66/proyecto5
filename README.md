@@ -1,5 +1,4 @@
-# proyecto5
-#Análisis de Datos de Vehículos en Venta en EE.UU.
+# Análisis de Datos de Vehículos en Venta en EE.UU.
 
 Esta es una aplicación web interactiva construida con Streamlit que permite analizar un conjunto de datos de vehículos en venta en los Estados Unidos. La aplicación ofrece herramientas para visualizar datos a través de histogramas y gráficos de dispersión.
 
